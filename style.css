@@ -11,8 +11,13 @@ body{
     grid-template-columns: 7% 40% auto;
 }
 
+.header-logo{
+    padding: 0 20px;
+}
+
 .header-logo img{
     max-width: 70px;
+
 }
 
 .nav-header-main ul li {
@@ -81,4 +86,5 @@ input[type=text], [type="password"]{
 .section-default{
     text-align: center;
     padding: 10px 10px;
+
 }
