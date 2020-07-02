@@ -10,17 +10,17 @@
 <body>
 
     <header>
-        <nav>
-            <a href="">
+        <nav class="nav-header-main">
+            <a class="header-logo" href="">
                 <img src="img/logo.png" alt="logo">
             </a>
             <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="#">Product</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="list-item"><a href="index.php">Home</a></li>
+                <li class="list-item"><a href="#">Product</a></li>
+                <li class="list-item"><a href="#">About us</a></li>
+                <li class="list-item"><a href="#">Contact</a></li>
             </ul>
-            <div>
+            <div class="header-login">
                 <form action="includes/login.php" method="post">
                     <input type="text" name="mailuid" placeholder="Username/E-mail...">
                     <input type="password" name="pwd" placeholder="Password">
