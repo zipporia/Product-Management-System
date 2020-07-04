@@ -23,7 +23,7 @@ body{
 .nav-header-main ul li {
     display: inline;
     list-style-type: none;
-    
+    float: none;
 }
 
 .nav-header-main ul li a{
