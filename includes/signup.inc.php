@@ -39,7 +39,7 @@ if(isset($_POST['signup-submit'])){
             exit();
         }
         else{
-            mysqli_stmt_bind_param($stmt, "s" $username);
+            mysqli_stmt_bind_param($stmt, "s", $username);
             mysqli_stmt_execute($stmt);
             mysqli_stmt_store_result($stmt);
             $resutCheck = mysqli_stmt_num_rows($stmt);
@@ -57,11 +57,21 @@ if(isset($_POST['signup-submit'])){
                     exit();
                 }
                 else{
-                    mysqli_stmt_bind_param($stmt, "sss" $username, $email, $pwd);
+
+                    $hashedpwd = password_hash($pwd, PASSWORD_DEFAULT);
+
+                    mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashedpwd);
                     mysqli_stmt_execute($stmt);
-                    mysqli_stmt_store_result($stmt);
+                    header("Location: ../signup.php?signup=success");
+                    exit();
                 }
             }
         }
     }
+    mysqli_stmt_close($stmt);
+    mysqli_close($conn);
+}
+else{
+    header("Location: ../signup.php");
+    exit();
 }
