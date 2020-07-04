@@ -50,7 +50,7 @@ ul{
 
 .header-login button{
     color: #eee;
-    background-color: rgb(44, 44, 46);
+    background-color: rgb(32, 32, 32);
     border: none;
     text-decoration: none;
     display: inline-block;
@@ -60,6 +60,9 @@ ul{
     font-size: 15px;
     cursor: pointer;
     margin: auto 2px;
+}
+.header-login button:hover{
+    background-color: rgb(59, 59, 59);
 }
 
 .header-login a{
@@ -80,7 +83,7 @@ input[type=text], [type="password"]{
 }
 
 .wrapper-main{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgb(30, 145, 58);
     width: 350px;
     margin: 0 auto;
     padding: 40px;
@@ -97,10 +100,10 @@ input[type=text], [type="password"]{
     width: 100%;
     box-sizing: border-box;
     padding: 12px 5px;
-    background: rgba(83, 83, 83, 0.8);
+    color: #fff;
     outline: none;
     border: none;
-    color: #fff;
+    color: rgb(31, 30, 30);
     margin: 5px;
     font-weight: 520;
     font-size: 16px;
@@ -113,15 +116,13 @@ input[type=text], [type="password"]{
     margin: 10px 5px;
     outline: none;
     border: none;
-    background: rgb(0, 132, 255);
+    background-color: rgb(32, 32, 32);
     font-size: 20px;
-    opacity: 0.8;
     color: #fff;
 }
 
 .section-default form button:hover{
-    background:#0265c7;
-    opacity: 0.8;
+    background-color: rgb(59, 59, 59);
 }
 
 
