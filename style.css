@@ -125,5 +125,23 @@ input[type=text], [type="password"]{
     background-color: rgb(59, 59, 59);
 }
 
+.signuperror {
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 5px 5px;
+    font-weight: bold;
+    color: rgb(173, 8, 8);
+}
+
+.signupsuccess {
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 5px 5px;
+    font-weight: bold;
+    color: rgb(72, 255, 0);
+}
+
 
 
