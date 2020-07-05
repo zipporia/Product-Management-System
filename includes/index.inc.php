@@ -29,15 +29,23 @@ if(isset($_POST['login-submit'])){
                     header("Locaiton: ../index.php?error=wrongpwd");
                     exit();
                 }
-                else if(){
-                    
+                else if($pwdCheck == true){
+                    session_start();
+                    $_SESSION['userId'] = $row['user_id'];
+                    $_SESSION['userUid'] = $row['user_uid'];
+
+                    header("Location: ../index.php?login=success");
+                    exit();
+                }
+                else{
+                    header("Locaiton: ../index.php?error=wrongpwd");
+                    exit();
                 }
             }
             else{
                 header("Location: ../index.php?error=nouser");
                 exit();
             }
-
         }
     }
 }
